@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins&display=swap');
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none; 
+    font-family: poppins, sans-serif;
+}
+
+.btn{
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    background: #228B22;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(192, 187, 187);
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8%;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 800;
+    background: white;
+    height: 80px;
+}
+
+.header .logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.header .navbar {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+
+.header .navbar{
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+
+.header .navbar a{
+    font-size: 18px;
+    color: black;
+}
+
+.header .navbar a:hover{
+    color: #228B22;
+}
+
+.icons{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 20px;
+}
+
+.icons img{
+    height: 20px; width: 20px;
+}
+
+.icons a img:hover{
+    color: #228B22;
+}
+
+.search-form{
+    position: absolute;
+    top: -115%; right: 2rem;
+    width: 20rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    box-shadow: 1px 3px 5px grey;
+    background: white;
+
+}
+
+.active{
+    top: 115%;
+}
+
+.search-form input{
+    height: 100%;
+    width: 100%;
+    padding: 0 1.2rem;
+    font-size: 15px;
+    color: black;
+    border-radius: 8px;
+    text-transform: none;
+}
+
+.search-form label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+.search-form img{
+    height: 15px; width: 15px;
+}
+
+.search-form img:hover{
+    color: #228B22;
+}
+
+.shopping-cart{
+    position: absolute;
+    top: 115%; right: -105%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 1px 3px 5px grey;
+    width: 20em;
+    padding: 2rem;
+}
+
+.active{
+    right: 36px;
+    transition: .4s linear;
+}
+
+.shopping-cart .box{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.shopping-cart img{
+    height: 100px;
+
+}
+
+.shopping-cart .content h3{
+    font-size: 18px;
+    padding-bottom: 3px;
+    color: black;
+}
+
+.shopping-cart .content span{
+    font-size: 18px;
+    color: black;
+}
+
+.shopping-cart .total{
+    text-align: center;
+    font-size: 18px;
+}

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --willow-brook:#ebffe9;
+    --willow-brook2:#dde3dd;
+    --patina:#5B9C84;
+    --vista-blue:#9CD4BC;
+    --black:rgba(0, 0, 0, 0);
+    --white:#FFFFFF;
+    --bg-color:#C4E4C4;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.1rem solid #999;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--white);
+}
+
+section#visitors {
+    align-items: left;
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    text-align: left;
+    border-radius: 10px;
+}
+
+h1{
+    margin-left: 250px;
+    margin-top: 70px;
+    font-size: 36px;
+}
+
+h2 {
+    color: var(--black);
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+table th {
+    background-color: var(--vista-blue);
+}
+
+table tr{
+    background-color: var(--white);
+}
+
+@media (max-width: 768px) {
+    section#visitors {
+        margin: 30px auto;
+        padding: 15px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    table {
+        font-size: 12px;
+    }
+}

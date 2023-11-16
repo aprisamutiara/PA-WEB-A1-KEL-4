@@ -1,0 +1,48 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Mengatur teks ke tengah */
+    max-width: 600px;
+    width: 100%;
+    margin: 0 20px;
+}
+
+/* Mengatur gaya teks untuk setiap elemen */
+h1,
+p {
+    margin-bottom: 10px; /* Memberikan jarak antara elemen */
+}
+
+img {
+    width: 400px;
+    height: auto;
+    margin-bottom: 20px; /* Memberikan jarak antara gambar dan teks berikutnya */
+}
+
+a {
+    display: inline-block; /* Membuat tautan menjadi elemen blok dalam kontainer */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #45a049;
+}

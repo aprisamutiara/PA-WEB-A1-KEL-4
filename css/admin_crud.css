@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;900&display=swap');
+
+:root{
+    --willow-brook:#DFEEDE;
+    --patina:#5B9C84;
+    --vista-blue:#9CD4BC;
+    --black:#000;
+    --white:#FFFFFF;
+    --grey:#ddd;
+    --bg-color:#C4E4C4;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.1rem solid #999;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 2rem;
+}
+
+.crud-form-container{
+    max-width: 62.5rem;
+    margin: 0 auto;
+}
+
+.crud-product-form{
+    max-width: 1 rem;
+    background-color: var(--bg-color);
+    border-radius: .5rem;
+    padding: 0.5rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.crud-product-form h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.crud-product-form .box{
+    text-transform: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: var(--black);
+    border-radius: .5rem;
+    background-color: var(--white);
+    margin: 1rem 0;
+    width: 100%;
+}
+
+select {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    background-color: var(--white);
+    transition: border-color 0.3s;
+}
+
+select option[disabled]:first-child {
+    color: var(--vista-blue); 
+}
+
+select:focus {
+    border-color: var(--patina);
+    outline: none;
+}
+
+select option {
+    padding: 10px;
+}
+
+
+.crud-btn {
+    font-size: 1rem;
+    padding: 8px;
+    margin: 4px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--patina);
+    text-align: center;
+    align-items: center;
+}
+
+.crud-btn:hover {
+    background-color: var(--vista-blue);
+}

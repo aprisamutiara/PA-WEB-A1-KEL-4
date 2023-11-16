@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../assets/images/bgformpesan.jpg);
+    background-size: contain;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.checkout-form {
+    background: rgba(240, 245, 248, 0.9);
+    max-width: 600px;
+    margin: 80px auto; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.checkout-form h1{
+    text-align: center;
+}
+
+.display-order{
+    max-width: 300px;
+    text-align: center;
+    padding: 8px;
+    margin: auto;
+    background-color: #377a62;
+    border-radius: 8px;
+}
+
+.display-order span{
+    display: inline-block;
+    border-radius: 3px;
+    background-color: #ccc;
+    padding: 8px 24px;
+    font-size: 12px;
+    margin: 3px;
+}
+
+span .grand-total{
+    width: 100%;
+    background-color: #377a62;
+    color: white;
+    padding: 8px;
+    border-radius: 0 0 8px 8px;
+} 
+
+.inputBox {
+    width: calc(48% - 10px);
+    margin-bottom: 15px;
+}  
+
+.inputBox span {
+    display: block;
+    margin-bottom: 8px;
+}
+ 
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-container{
+    text-align: center;
+}
+
+.btn-container h3{
+    font-size: 16px;
+}
+
+.btn-container a{
+    text-decoration: none;
+    color: #228B22;
+}
+
+.btn-container .btn {
+    background: #377a62;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-container .btn:hover {
+    background: #428870;
+}
+
+.btn-container a{
+    color: blue;
+}
+
+.btn-container a:hover{
+    color: rgb(105, 105, 226);
+}
+
+/* order */
+.order-msg {
+    position: fixed;
+    top: 0; left: 0;
+    min-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff; 
+    z-index: 1100;
+    width: 100%;
+}
+
+.order-msg .msg {
+    width: 500px; 
+    background-color: #fff; 
+    border: 1px solid #377a62; 
+    border-radius: 6px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-msg .msg h3 {
+    font-size: 18px;
+    color: #228B22;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.order-msg .msg .order-detail {
+    background-color: #c4e4c4;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.order-msg .msg .order-detail span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.order-msg .msg .order-detail span.total {
+    font-weight: bold;
+    color: #e44d26; 
+}
+
+.order-msg .msg .order-detail span.customer-details {
+    margin-top: 1rem;
+    border-top: 1px solid #000; 
+    padding-top: 1rem;
+}
+
+.order-msg .msg .order-detail span.customer-details p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.order-msg .msg .order-detail span.customer-details p span {
+    font-weight: bold;
+    color: #000080; /* Warna biru tua */
+}
+
+@media screen and (max-width: 600px) {
+    .inputBox {
+        width: 100%;
+    }
+}

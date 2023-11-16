@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins&display=swap');
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.shop-cart {
+    margin-top: 20px;
+}
+
+.heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+img {
+    max-width: 100px;
+    height: auto;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+input[type="number"] {
+    width: 50px;
+    padding: 6px;
+    margin-right: 10px;
+}
+
+.btn-delete {
+    color: red;
+    cursor: pointer;
+}
+
+.option-btn, .delete-btn {
+    padding: 6px 16px;
+    text-decoration: none;
+    background-color: #26c65e;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.option-btn:hover, .delete-btn:hover {
+    background-color: #26c65e;
+}
+
+@media (max-width: 768px) {
+    th, td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    img {
+        max-width: 80px;
+    }
+
+    .option-btn, .delete-btn {
+        font-size: 14px;
+    }
+}
